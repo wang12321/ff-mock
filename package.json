@@ -1,0 +1,48 @@
+{
+  "name": "ff-koa",
+  "version": "1.0.1",
+  "description": "ffKoa",
+  "author": "1396933943@qq.com",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "devDependencies": {
+    "husky": "~4.2.5",
+    "gulp-bump": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "build": "gulp",
+    "node": "node node/openBrowser"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "ff-mock",
+    "mock",
+    "数据",
+    "模拟数据",
+    "node",
+    "koa"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-push": "node node/openBrowser"
+    }
+  }
+}
